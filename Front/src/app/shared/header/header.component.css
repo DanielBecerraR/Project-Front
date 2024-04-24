@@ -1,0 +1,36 @@
+.example-spacer {
+    flex: 1 1 auto;
+    background-color: aliceblue;
+  }
+
+  .toolbar{
+    border: 3px color;
+    border-color: cadetblue;
+    background-color: #9DD0F0;
+  }
+
+  /* styles.css (o tu archivo de estilos) */
+.desktop-span {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .desktop-span {
+    display: inline-block;
+    margin-right: 12px; /* Espacio entre elementos */
+  }
+
+  .mobile-button {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  .mobile-button {
+    display: block;
+  }
+
+  .mobile-menu {
+    min-width: auto;
+  }
+}
